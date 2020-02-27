@@ -16,45 +16,45 @@ class App extends Component {
     let svg = d3Select(this.svgWrap.current);
 
     svg.on('mousedown', () => {
-      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 73))) {
+      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 85))) {
         d3Event.preventDefault();
       }
       this.updateMousePos();
       this.props.startParticles();
     });
     svg.on('touchstart', () => {
-      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 73))) {
+      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 85))) {
         d3Event.preventDefault();
       }
       this.updateTouchPos();
       this.props.startParticles();
     });
     svg.on('mousemove', () => {
-      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 73))) {
+      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 85))) {
         d3Event.preventDefault();
       }
       this.updateMousePos();
     });
     svg.on('touchmove', () => {
-      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 73))) {
+      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 85))) {
         d3Event.preventDefault();
       }
       this.updateTouchPos();
     });
     svg.on('mouseup', () => {
-      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 73))) {
+      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 85))) {
         d3Event.preventDefault();
       }
       this.props.stopParticles();
     });
     svg.on('touchend', () => {
-      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 73))) {
+      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 85))) {
         d3Event.preventDefault();
       }
       this.props.stopParticles();
     });
     svg.on('mouseleave', () => {
-      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 73))) {
+      if(!(this.props.mousePos[0] < 280 && this.props.mousePos[1] > (this.props.svgHeight - 85))) {
         d3Event.preventDefault();
       }
       this.props.stopParticles();
