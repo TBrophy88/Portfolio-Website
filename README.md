@@ -2,7 +2,7 @@
 
 This is a personal website I created to function as a portfolio.
 
-The homepage features particle effects with various controls includin a 'time control' feature utilizing react-redux for state management.
+The homepage features particle effects with various controls including a 'time control' feature utilizing react-redux for state management.
 
 Created using:
 Create-React-App,
