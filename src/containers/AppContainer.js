@@ -184,12 +184,12 @@ class AppContainer extends Component {
             updatedParticles = updatedParticles
               .map(p => {
                 if(p.x < 2){
-                  p.vector[0] = Math.abs(p.vector[0]);
-                } if (p.x > (this.props.svgWidth - 2)) {
                   p.vector[0] = -Math.abs(p.vector[0]);
+                } if (p.x > (this.props.svgWidth - 2)) {
+                  p.vector[0] = Math.abs(p.vector[0]);
                 }
                 if(p.y < 2) {
-                  p.vector[1] = Math.abs(p.vector[1]);
+                  p.vector[1] = -Math.abs(p.vector[1]);
                 }
                 let [vx, vy] = p.vector;
                 p.x += vx * -multiplier;
