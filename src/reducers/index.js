@@ -173,6 +173,8 @@ function appReducer(state, action) {
         timeStateChanged: action.timeStateChanged,
         controlsEnabled: controlsEnabled
       });
+    case "RESET":
+      return initialState;
     default:
       return state;
   }

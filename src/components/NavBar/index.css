@@ -1,0 +1,129 @@
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-device-width: 660px) {
+  ul {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+  }
+
+  ul li {
+    list-style: none;
+    margin: 0 2px;
+  }
+
+  ul li a {
+    position: relative;
+    display: block;
+    width: 54px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    background: #2E3047;
+    border-radius: 10%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    color: #707793;
+    transition: .5s;
+    text-decoration: none;
+  }
+
+  ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #3BBA9C;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+
+  ul li a:hover:before {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #3BBA9C;
+    filter: blur(3px);
+  }
+
+  ul li a:hover {
+    color: #3BBA9C;
+    box-shadow: 0 0 15px #3BBA9C;
+    text-shadow: 0 0 15px #3BBA9C;
+  }
+}
+@media (min-device-width: 661px){
+  ul {
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+  }
+
+  ul li {
+    list-style: none;
+    margin: 0 7px;
+  }
+
+  ul li a {
+    position: relative;
+    display: block;
+    width: 95px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #2E3047;
+    border-radius: 10%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: #707793;
+    transition: .5s;
+    text-decoration: none;
+  }
+
+  ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #3BBA9C;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+
+  ul li a:hover:before {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #3BBA9C;
+    filter: blur(3px);
+  }
+
+  ul li a:hover {
+    color: #3BBA9C;
+    box-shadow: 0 0 15px #3BBA9C;
+    text-shadow: 0 0 15px #3BBA9C;
+  }
+}
