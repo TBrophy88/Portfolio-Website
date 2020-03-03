@@ -18,19 +18,19 @@
 }
 
 @media (max-device-width: 660px) {
-  ul {
+  .menu ul {
     margin: 0 auto;
     margin-top: 10px;
     padding: 0;
     display: flex;
   }
 
-  ul li {
+  .menu ul li {
     list-style: none;
     margin: 0 2px;
   }
 
-  ul li a {
+  .menu ul li a {
     position: relative;
     display: block;
     width: 54px;
@@ -44,9 +44,10 @@
     color: #707793;
     transition: .5s;
     text-decoration: none;
+    outline: none;
   }
 
-  ul li a:before {
+  .menu ul li a:before {
     content: '';
     position: absolute;
     top: 0;
@@ -60,32 +61,32 @@
     z-index: -1;
   }
 
-  ul li a:hover:before {
+  .menu ul li a:hover:before {
     transform: scale(1.2);
     box-shadow: 0 0 15px #3BBA9C;
     filter: blur(3px);
   }
 
-  ul li a:hover {
+  .menu ul li a:hover {
     color: #3BBA9C;
     box-shadow: 0 0 15px #3BBA9C;
     text-shadow: 0 0 15px #3BBA9C;
   }
 }
 @media (min-device-width: 661px){
-  ul {
+  .menu ul {
     margin: 0 auto;
     margin-top: 40px;
     padding: 0;
     display: flex;
   }
 
-  ul li {
+  .menu ul li {
     list-style: none;
     margin: 0 7px;
   }
 
-  ul li a {
+  .menu ul li a {
     position: relative;
     display: block;
     width: 95px;
@@ -99,9 +100,10 @@
     color: #707793;
     transition: .5s;
     text-decoration: none;
+    outline: none;
   }
 
-  ul li a:before {
+  .menu ul li a:before {
     content: '';
     position: absolute;
     top: 0;
@@ -115,13 +117,13 @@
     z-index: -1;
   }
 
-  ul li a:hover:before {
+  .menu ul li a:hover:before {
     transform: scale(1.2);
     box-shadow: 0 0 15px #3BBA9C;
     filter: blur(3px);
   }
 
-  ul li a:hover {
+  .menu ul li a:hover {
     color: #3BBA9C;
     box-shadow: 0 0 15px #3BBA9C;
     text-shadow: 0 0 15px #3BBA9C;

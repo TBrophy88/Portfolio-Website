@@ -8,7 +8,7 @@
   overflow: hidden;
 }
 
-h3 {
+.title-container h3 {
   text-align: center;
   font-family: 'Roboto Slab', serif;
   color: #3BBA9C;
