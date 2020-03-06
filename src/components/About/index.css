@@ -87,58 +87,310 @@ body {
   margin-left: 10px;
 }
 
-.job-block {
-  margin: 10px;
+.timeline-container {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  position: relative;
+  margin: 40px 0;
   font-family: 'Roboto Slab', serif;
   color: #3BBA9C;
-  border: 1px solid #3BBA9C;
+  height: 1400px;
+}
+
+.timeline-container::after {
+  background-color: #2E3047;
+  content: '';
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 1360px;
+  z-index: 0;
+}
+
+.tick {
+  border-top: 2px solid #2E3047;
+  width: 32px;
+  left: calc(50% - 16px);
+  position: absolute;
+}
+.tick:nth-child(1) {
+  top: 0px;
+}
+.tick:nth-child(1):after {
+  content: '2021';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -8px;
+}
+.tick:nth-child(2){
+  top: 96px;
+}
+.tick:nth-child(2):after {
+  content: '2020';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -8px;
+}
+.tick:nth-child(3){
+  top: 192px;
+}
+.tick:nth-child(3):after {
+  content: '2019';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -8px;
+}
+.tick:nth-child(4){
+  top: 288px;
+}
+.tick:nth-child(4):after {
+  content: '2018';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -8px;
+}
+.tick:nth-child(5){
+  top: 384px;
+}
+.tick:nth-child(5):after {
+  content: '2017';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -8px;
+}
+.tick:nth-child(6){
+  top: 480px;
+}
+.tick:nth-child(6):after {
+  content: '2016';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% + 20px);
+  top: -8px;
+}
+.tick:nth-child(7){
+  top: 576px;
+}
+.tick:nth-child(7):after {
+  content: '2015';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% + 20px);
+  top: -8px;
+}
+.tick:nth-child(8){
+  top: 672px;
+}
+.tick:nth-child(8):after {
+  content: '2014';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% + 20px);
+  top: -8px;
+}
+.tick:nth-child(9){
+  top: 768px;
+}
+.tick:nth-child(9):after {
+  content: '2013';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% + 20px);
+  top: -8px;
+}
+.tick:nth-child(10){
+  top: 864px;
+}
+.tick:nth-child(10):after {
+  content: '2012';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -8px;
+}
+.tick:nth-child(11){
+  top: 960px;
+}
+.tick:nth-child(11):after {
+  content: '2011';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -8px;
+}
+.tick:nth-child(12){
+  top: 1056px;
+}
+.tick:nth-child(12):after {
+  content: '2010';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% + 20px);
+  top: -8px;
+}
+.tick:nth-child(13){
+  top: 1152px;
+}
+.tick:nth-child(13):after {
+  content: '2009';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% + 20px);
+  top: -8px;
+}
+.tick:nth-child(14){
+  top: 1248px;
+}
+.tick:nth-child(14):after {
+  content: '2008';
+  font-size: 12px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: -8px;
+}
+
+
+.timeline-item {
+  display: block;
+  padding-right: 30px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item:nth-child(15) {
+  margin-top: 72px;
+  height: 288px;
+}
+.timeline-item:nth-child(16) {
+  height: 424px;
+}
+.timeline-item:nth-child(17) {
+  height: 304px;
+}
+.timeline-item:nth-child(18) {
+  height: 64px;
+}
+.timeline-item:nth-child(19) {
+  height: 40px;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.timeline-item-content {
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
   border-radius: 5px;
-  padding: 5px;
-}
-
-.job-header, .job-sub-header {
+  background-color: #2E3047;
   display: flex;
-  justify-content: space-between;
-}
-
-.job-title, .job-dates {
-  font-weight: 900;
-  font-size: 14px;
-}
-
-.job-company, .job-location {
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+  position: relative;
+  width: 400px;
+  max-width: 70%;
   text-align: right;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  float: right;
+}
+
+.timeline-item-content::after {
+  content: ' ';
+  background-color: #2E3047;
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: -7.5px;
+  top: calc(50% - 7.5px);
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+  text-align: left;
+  float: left;
+  align-items: flex-start;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content::after {
+  right: auto;
+  left: -7.5px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item-content .time {
+  color: #3BBA9C;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: 'Roboto Slab', serif;
+}
+
+.timeline-item-content .job-title, .timeline-item-content .job-company  {
+  line-height: 24px;
+  max-width: 300px;
+  color: #3BBA9C;
+  font-family: 'Roboto Slab', serif;
+}
+
+.timeline-item-content .job-title {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.timeline-item-content .job-company {
+  font-size: 13px;
   font-style: italic;
 }
 
-.job-accomplishments-header {
-  margin: 6px 0 0 0;
-  text-decoration: underline;
-  font-weight: 900;
-}
-
-.job-accomplishments ul {
-  margin-top: 6px;
-}
-
-.education-container {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-  font-family: 'Roboto Slab', serif;
-  color: #3BBA9C;
-  border: 1px solid #3BBA9C;
+.timeline-item-content .bar {
+  background-color: #3BBA9C;
+  border: 3px solid #2E3047;
   border-radius: 5px;
-  padding: 5px;
+  position: absolute;
+  right: -40px;
+  width: 20px;
+  z-index: 100;
 }
 
-.education-date {
-  font-weight: 900;
-  font-size: 14px;
+.timeline-item:nth-child(odd) .timeline-item-content .bar {
+  background-color: #707793;
+  right: auto;
+  left: -40px;
+}
+
+.timeline-item:nth-child(15) .timeline-item-content .bar {
+  height: 288px;
+  top: calc(50% - 144px);
+}
+.timeline-item:nth-child(16) .timeline-item-content .bar {
+  height: 424px;
+  top: calc(50% - 212px);
+}
+.timeline-item:nth-child(17) .timeline-item-content .bar {
+  height: 304px;
+  top: calc(50% - 152px);
+}
+.timeline-item:nth-child(18) .timeline-item-content .bar {
+  height: 64px;
+  top: calc(50% - 32px);
+}
+.timeline-item:nth-child(19) .timeline-item-content .bar {
+  height: 40px;
+  top: calc(50% - 20px);
 }
 
 #personal-container {
