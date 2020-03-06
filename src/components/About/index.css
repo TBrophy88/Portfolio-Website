@@ -56,11 +56,14 @@ body {
 #intro-container {
   margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #intro-image-container {
   display: flex;
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 
 #profile-picture {
@@ -300,7 +303,7 @@ body {
   padding: 15px;
   position: relative;
   width: 400px;
-  max-width: 70%;
+  max-width: 95%;
   text-align: right;
   top: 50%;
   transform: translateY(-50%);
@@ -396,11 +399,14 @@ body {
 #personal-container {
   margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .personal-image-container {
   display: flex;
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 
 #family, #abby {

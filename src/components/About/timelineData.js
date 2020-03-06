@@ -6,7 +6,7 @@ export const timelineData =[
     dateEnd: 'Current'
   },
   {
-    title: "English Teacher/Consultant",
+    title: "English Teacher, Consultant",
     company: 'English First, Web International, Private Contracting',
     dateStart: '2012/10',
     dateEnd: '2017/03'

@@ -26,7 +26,6 @@ class Professional extends Component {
         </div>);
     return (
       <div id='professional-container'>
-        <h3> Employement History </h3>
         {Timeline}
       </div>
     );
