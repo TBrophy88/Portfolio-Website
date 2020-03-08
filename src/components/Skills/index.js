@@ -13,6 +13,9 @@ class Skills extends Component {
         <div className='title-container'>
           <h3>Tom Brophy's Skills</h3>
         </div>
+        <div className='skills-container'>
+          
+        </div>
       </div>
     );
   }

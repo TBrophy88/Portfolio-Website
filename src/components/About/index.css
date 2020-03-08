@@ -72,8 +72,14 @@ body {
 }
 
 #intro-text-container {
-  margin: 0 10px;
-  flex-grow: 2;
+  margin: 10px 10px;
+  max-width: 75%;
+}
+
+@media (max-device-width: 660px) {
+  #intro-text-container {
+    max-width: 90%;
+  }
 }
 
 #intro-text-container p{
@@ -415,8 +421,14 @@ body {
 }
 
 #personal-text-container {
-  margin: 0 10px;
-  flex-grow: 2;
+  margin: 10px 10px;
+  max-width: 50%;
+}
+
+@media (max-device-width: 660px) {
+  #personal-text-container {
+    max-width: 90%;
+  }
 }
 
 #personal-text-container p{
