@@ -51,7 +51,7 @@ class Projects extends Component {
                     </Link>
                   </div>
                   <div className='project-text-container'>
-                    <p>TCA is a manufacturing company in China.  I developed their propritary ERP system for 3 years, accomidating their dynamic business needs and expanding functionality to reduce workloads.  It is built on a LAMP stack, uses Laravel framework and bootstrap for styling.  Censored images published with the permission of The Cable Assembler Ltd.  Click on the thumbnail for more screenshots or click <Link exact to={`${url}/tca`}>here.</Link></p>
+                    <p>TCA is a manufacturing company in China.  I developed their proprietary ERP system for 3 years, accommodating their dynamic business needs and expanding functionality to reduce workloads.  It is built on a LAMP stack, uses Laravel framework and bootstrap for styling.  Censored images published with the permission of The Cable Assembler Ltd.  Click on the thumbnail for more screenshots or click <Link exact to={`${url}/tca`}>here.</Link></p>
                   </div>
                 </div>
               </div>

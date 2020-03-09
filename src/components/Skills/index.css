@@ -1,17 +1,145 @@
-.page-container {
-  width: 100vw;
-  height: 100vh;
+body {
   background-color: #3C3F58;
+  font-family: 'Roboto Slab', serif;
+  color: #3BBA9C;
 }
 
-.title-container {
+.skills-container {
+  background-color: #2E3047;
+  border-radius: 15px;
+  position: relative;
+  top: 100px;
+  margin: auto;
+  max-width: 1200px;
   overflow: hidden;
 }
 
-.title-container h3 {
+.title-container h1 {
   text-align: center;
   font-family: 'Roboto Slab', serif;
   color: #3BBA9C;
-  margin: 110px auto auto auto;
+}
+
+.category-container {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+}
+
+.skills-content-container {
+  position: relative;
+}
+
+.category-title::after {
+  background-color: #3BBA9C;
+  content: '';
+  position: absolute;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: calc(100% + 2px);
+  z-index: 0;
+}
+
+.category-tick {
+  border-top: 2px solid #3BBA9C;
+  width: 16px;
+  left: calc(50% - 1px);
+  top: calc(100% + 1px);
+  position: absolute;
+}
+
+.category-tick:nth-child(odd) {
+  top: -1px;
+}
+
+.category-main-tick {
+  border-top: 2px solid #3BBA9C;
+  width: 16px;
+  left: calc(50% - 16px);
+  top: calc(50% + 1px);
+  position: absolute;
+}
+
+.category-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  padding-right: 20px;
+}
+
+.category-title h3 {
+  text-align: right;
+}
+
+.category-skills-container {
+  padding-left: 10px;
+  width: 50%;
+}
+
+.skill {
+  display: flex;
+  position: relative;
+  margin: 2px auto;
+}
+
+.skill-name {
+  font-size: 12px;
+}
+
+.skill-level-container {
+  width: 65px;
+  position: relative;
+  margin-left: 5px;
+}
+
+.skill-point {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 3px);
+  transform: rotate(45deg);
+  width: 8px;
+  height: 8px;
+}
+
+.skill-point:nth-child(2) {
+  left: 12px;
+}
+.skill-point:nth-child(3) {
+  left: 24px;
+}
+.skill-point:nth-child(4) {
+  left: 36px;
+}
+.skill-point:nth-child(5) {
+  left: 48px;
+}
+
+.legend-container {
+  text-align: center;
+  background-color: #707793;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 80%;
+  padding: 10px;
+}
+
+.legend-container h3 {
+  margin: 0 auto 10px auto;
+}
+
+.legend-description {
+  width: 50%;
+  font-size: 12px;
+  text-align: left;
+  text-indent: 1em;
+  padding: 5px;
+}
+
+.legend-container .skill {
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
 }
