@@ -52,17 +52,21 @@ body {
 @media (max-device-width: 660px) {
   .project-text-container {
     width:100%;
-    text-indent: 0;
     margin: 10px 5px;
     width: 65%;
+  }
+  .project-text-container p{
+    text-indent: 0;
   }
 }
 
 @media (min-device-width: 661px) {
   .project-text-container {
-    text-indent: 3em;
     margin: 10px 10px;
     max-width: 65%
+  }
+  .project-text-container p{
+    text-indent: 3em;
   }
 }
 

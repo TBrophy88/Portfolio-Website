@@ -36,6 +36,7 @@ class Projects extends Component {
                     />
                   </div>
                   <div className='project-text-container'>
+                    <h3>Portfolio Website</h3>
                     <p>This is my portfolio website (that you are on right now).  It features a particle system on the home page with state fully managed via redux.  This enables a relatively simple implementation of 'time-control' which can undo do all particle movements, death, creation, and changes in controls state (quantity, velocity and gravity).  The code is fully available on my GitHub <a href='https://github.com/TBrophy88/Portfolio-Website'>here.</a></p>
                   </div>
                 </div>
@@ -51,6 +52,7 @@ class Projects extends Component {
                     </Link>
                   </div>
                   <div className='project-text-container'>
+                    <h3>ERP System</h3>
                     <p>TCA is a manufacturing company in China.  I developed their proprietary ERP system for 3 years, accommodating their dynamic business needs and expanding functionality to reduce workloads.  It is built on a LAMP stack, uses Laravel framework and bootstrap for styling.  Censored images published with the permission of The Cable Assembler Ltd.  Click on the thumbnail for more screenshots or click <Link exact to={`${url}/tca`}>here.</Link></p>
                   </div>
                 </div>
