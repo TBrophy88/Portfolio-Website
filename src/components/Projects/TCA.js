@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import TCAImage from './TCAImage';
 
 class TCA extends Component {
   constructor(props) {
@@ -72,13 +73,7 @@ class TCA extends Component {
               onClick = {() => this.handleDecrementTCAPicture()}
             />
           </div>
-          <div className='tca-image-container'>
-            <img
-              className='tca-image'
-              src={"../tca/" + this.state.TCAPictureSources[this.state.TCAPicture]}
-              alt="tca system screenshot"
-            />
-          </div>
+          <TCAImage src={"../tca/" + this.state.TCAPictureSources[this.state.TCAPicture]} />
           <div className='next-button-container'>
             <img
               className='next-button'
