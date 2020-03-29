@@ -4,7 +4,7 @@ export const skillsData = [
     skills: [
       {
         name: 'Windows',
-        level: 4
+        level: 5
       },
       {
         name: 'Linux',
@@ -12,7 +12,7 @@ export const skillsData = [
       },
       {
         name: 'Mac OS',
-        level: 2
+        level: 3
       },
     ]
   },
@@ -21,19 +21,19 @@ export const skillsData = [
     skills: [
       {
         name: 'JavaScript',
-        level: 4
+        level: 5
       },
       {
         name: 'PHP',
-        level: 4
+        level: 5
       },
       {
         name: 'HTML',
-        level: 4
+        level: 5
       },
       {
         name: 'CSS',
-        level: 4
+        level: 5
       },
       {
         name: 'SQL',
@@ -45,7 +45,7 @@ export const skillsData = [
       },
       {
         name: 'VB.NET',
-        level: 2
+        level: 3
       },
       {
         name: 'Java',
@@ -78,7 +78,7 @@ export const skillsData = [
       },
       {
         name: 'MySQL',
-        level: 4
+        level: 5
       },
       {
         name: 'Git',
@@ -99,11 +99,11 @@ export const skillsData = [
     skills: [
       {
         name: 'Laravel',
-        level: 4
+        level: 5
       },
       {
         name: 'React.js',
-        level: 4
+        level: 5
       },
     ]
   },
@@ -112,15 +112,15 @@ export const skillsData = [
     skills: [
       {
         name: 'Communication',
-        level: 4
+        level: 5
       },
       {
         name: 'Mandarin',
-        level: 3
+        level: 4
       },
       {
         name: 'Self Learning',
-        level: 4
+        level: 5
       },
     ]
   }

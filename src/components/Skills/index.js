@@ -29,13 +29,6 @@ class Skills extends Component {
       </div>
     );
 
-    let styleYes = {
-      backgroundColor: '#3BBA9C'
-    };
-    let styleNo = {
-      backgroundColor: '#43455C'
-    };
-
     return (
       <div className='page-container'>
         <NavBar />
