@@ -10,4 +10,4 @@ React-Redux,
 React-Konva,
 D3
 
-A live version can be found [here](http://www.tbrophy.com).
+A live version can be found ~~[here]~~ website no longer active.
